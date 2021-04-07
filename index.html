@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css"/>
+        <title>Number Exercise</title>
+    </head>
+
+    <body>
+        <div id="app">
+            <form name="inputForm">
+                <label><h1>enter in any number to start</h1> 
+                    <p>if you input 0, max min avg of the numbers will show!</p></label>
+                <input type="number" placeholder="what number do you like?" id="inputValue" v-model="number">
+                <button @click="compute">enter</button>
+            </form>
+
+            <div id="numbers" style="visibility:hidden">
+                {{numbers}}
+            </div>
+
+            <div id="results" style="visibility:hidden">
+                <h1>Results</h1>
+                <h3>Highest Number: {{max}}</h3>
+                <h3>Smallest Number: {{min}}</h3>
+                <h3>Average: {{avg}}</h3>
+            </div>
+            
+
+        </div>
+
+        <script src="https://unpkg.com/vue@next"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
