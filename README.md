@@ -6,4 +6,6 @@
 * practice Vue.js
 
 ## Flow Chart
+![flow chart](counter_flowchart.png)
 
+** I just made a validation rule on the input field so the user can ONLY type numbers.
